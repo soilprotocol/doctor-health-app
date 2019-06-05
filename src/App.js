@@ -4,6 +4,7 @@ import RequestScreen from "./components/functional_components/RequestScreen"
 import { BrowserRouter, Route, Switch } from "react-router-dom"; 
 import Navigation from './components/functional_components/Navbar/Navbar'; 
 import auth from 'solid-auth-client'; 
+import LoggedOut from './components/functional_components/LoggedOut/LoggedOut'; 
 
 
 class App extends React.Component {
@@ -55,7 +56,7 @@ class App extends React.Component {
             }
           webid={this.state.webId}/>
           <Switch>
-            <Route exact path ="/" component={HomeScreen} /> 
+            <Route exact path ="/" component={this.state.webId? HomeScreen : LoggedOut} /> 
             <Route exact path ="/request" component={RequestScreen} /> 
           </Switch>
       </BrowserRouter>
