@@ -1,12 +1,19 @@
 import React from "react";
-import styles from "./HomeScreen.module.css"
+import styles from "./RequestScreen.module.css"
+import InputField from "../InputField/InputField";
 
-const HomeScreen = () => {
+const RequestScreen = () => {
+    const inputMap = ["Name", "Geburtsdatum", "Addresse", "Email"]
     return (
-        <div className={styles.text}>
-            <h1>Hello World!</h1>
+        <div>
+            <div className="header">What do you need from your patient?</div>
+            <ul className={styles.text}>
+                {inputMap.map((input) => {
+                    return <InputField inputType={input}></InputField>
+                })}
+            </ul>
         </div>
     )
 };
 
-export default HomeScreen
+export default RequestScreen
