@@ -8,6 +8,7 @@ import Nav from 'react-bootstrap/Nav';
 
 
 const Navigation = props => {
+    console.log(props.webId);
     return (
     <Navbar bg="dark" variant="dark">
         <Navbar.Brand href="#home">Startseite</Navbar.Brand>

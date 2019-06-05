@@ -54,7 +54,7 @@ class App extends React.Component {
           <Navigation onClick={
               this.state.webId ? this.logout.bind(this) : this.login.bind(this)
             }
-          webid={this.state.webId}/>
+          webId={this.state.webId}/>
           <Switch>
             <Route exact path ="/" component={this.state.webId? HomeScreen : LoggedOut} /> 
             <Route exact path ="/request" component={RequestScreen} /> 
