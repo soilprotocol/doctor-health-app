@@ -5,8 +5,8 @@ const InputField = (props) => {
     return (
         <div className={styles.listItem}>
         <label>
-            <input type="radio"></input>
-            {props.inputType}
+            <input type={props.inputType ? props.inputType : "radio"}></input>
+            {props.inputName}
         </label>
         </div>
     )

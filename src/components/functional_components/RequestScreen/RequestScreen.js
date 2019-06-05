@@ -6,12 +6,14 @@ const RequestScreen = () => {
     const inputMap = ["Name", "Geburtsdatum", "Addresse", "Email"]
     return (
         <div>
-            <div className="header">What do you need from your patient?</div>
+            <div className={styles.header}>What do you need from your patient?</div>
             <ul className={styles.text}>
                 {inputMap.map((input) => {
-                    return <InputField inputType={input}></InputField>
+                    return <InputField inputName={input}></InputField>
                 })}
             </ul>
+            <div className={styles.header}>What do you need from your patient?</div>
+            <InputField inputType="text" inputName="Description"></InputField>
         </div>
     )
 };
