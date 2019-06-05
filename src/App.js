@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeScreen from "./components/functional_components/HomeScreen";
 import RequestScreen from "./components/functional_components/RequestScreen"
+import PatientDetails from './components/functional_components/PatientDetails/PatientDetails'; 
 import { BrowserRouter, Route, Switch } from "react-router-dom"; 
 import Navigation from './components/functional_components/Navbar/Navbar'; 
 import auth from 'solid-auth-client'; 
@@ -58,6 +59,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path ="/" component={this.state.webId? HomeScreen : LoggedOut} /> 
             <Route exact path ="/request" component={RequestScreen} /> 
+            <Route exact path="/patient" component={PatientDetails} /> 
           </Switch>
       </BrowserRouter>
     );

@@ -1,0 +1,62 @@
+.text {
+    color:black; 
+    align-content: center; 
+}
+
+.h1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.rowimagemargin {
+    margin-top: 10%; 
+    padding-left: 5%;
+}
+
+/* .table {
+    margin-top: 10%; 
+} */
+
+.row {
+    padding-top: 5%;
+    padding-left: 5%; 
+}
+
+.rowrightcolumn {
+    padding-top: 5%;
+    padding-left: 7%; 
+}
+
+.rowbigmargin {
+    margin-top: 50px;
+    padding-left: 5%; 
+}
+
+.dottedborder {
+    margin-top: 22%;
+    border-style: dotted; 
+    padding: 60% 10% 60% 10%;
+    border-radius: 16px;
+}
+
+.a {
+    font-size: 20px;
+    margin-left: 3%;
+}
+
+.anomargin {
+    font-size: 20px;
+}
+
+.h2 {
+    margin-top: 1%; 
+    font-size: 20px;
+}
+
+.button {
+    margin-top: 7%; 
+}
+
+.image {
+    width: 100%; 
+}

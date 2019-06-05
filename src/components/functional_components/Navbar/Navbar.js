@@ -13,6 +13,7 @@ const Navigation = props => {
         <Nav className="mr-auto">
         <Nav.Link href="home">Home</Nav.Link>
         <Nav.Link href="request">Request</Nav.Link>
+        <Nav.Link href="patient">PatientDetails</Nav.Link>
         </Nav>
         <Button variant="primary" onClick={props.onClick}>{ props.webId? "Logout" : "Login"}</Button>
     </Navbar>
