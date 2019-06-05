@@ -15,3 +15,16 @@ const LoggedOut = () => {
 
 
 export default LoggedOut; 
+
+
+{/* <label htmlFor="profilePictureUpload">
+                            <Button variant="primary">Upload Patient Data</Button>
+                        <input
+                        id="profilePictureUpload"
+                        name="profilePictureUpload"
+                        type="file"
+                        style={{display: "none"}}
+                        onChange={props.onChange}
+                        accept="image/*"
+                        />
+                    </label> */}

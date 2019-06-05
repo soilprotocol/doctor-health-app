@@ -15,10 +15,10 @@ const PatientDetails = props => {
         <Container style={{width: "100%", paddingTop: "5%", paddingBottom: "10%"}}>
             <Row className={styles.text}>
                 <Col>
-                    <Image className={styles.image}src="https://malte18.solid.community/profile/Bildschirmfoto%202018-07-27%20um%2016.22.46.png" rounded/>
+                    <Image className={styles.image}src={require("./olli.jpg")} rounded/>
                     <Row className={styles.rowimagemargin}>
                         <div className={styles.h1}>Name: </div>
-                        <div className={styles.a}>Elliott Banana</div>
+                        <div className={styles.a}>Oliver Kollmer</div>
                     </Row>
                     <Row className={styles.row}> 
                         <div className={styles.h1}>Geb: </div>
@@ -26,7 +26,9 @@ const PatientDetails = props => {
                     </Row>
                     <Row className={styles.row}> 
                         <div className={styles.h1}>Anschrift: </div>
-                        <div className={styles.a}>02.03.1990</div>
+                        <div className={styles.a}>Große Bleiche 25 <br></br>
+                                                  55116 Mainz
+                        </div>
                     </Row>
                     <Row className={styles.row}> 
                         <div className={styles.h1}>Versicherungsstatus: </div>
@@ -46,7 +48,7 @@ const PatientDetails = props => {
                     </Row>
                     <Row className={styles.row}> 
                         <div className={styles.h1}>Größe: </div>
-                        <div className={styles.a}>1,90m</div>
+                        <div className={styles.a}>1,80m</div>
                     </Row>
                     <Row className={styles.row}> 
                         <div className={styles.h1}>Raucher: </div>
@@ -59,12 +61,12 @@ const PatientDetails = props => {
                 <Col xs={7}>
                     <Row>
                         <div className={styles.h1} style={{paddingLeft: "3%", marginBottom: "3%"}}>Patientendaten > Fall 2 </div>
-                        <div>
-                        <Form>
-                            <Form.Group controlId="formBasicEmail">
-                                <Form.Control type="email" placeholder="Suche..." />
-                            </Form.Group>
-                        </Form>
+                        <div style={{paddingLeft: "25%"}}> 
+                            <Form>
+                                <Form.Group controlId="formBasicEmail">
+                                    <Form.Control type="email" placeholder="Suche..." />
+                                </Form.Group>
+                            </Form>
                         </div>
                     </Row>
                     <Table striped hover className={styles.table}>
@@ -103,7 +105,19 @@ const PatientDetails = props => {
                     </Table>
                 </Col>
                 <Col>
-                    <div className={styles.dottedborder}>Dokument Hochladen</div>
+                    <label htmlFor="profilePictureUpload">
+                            {/* <img src={props.picture} width="100%" height="100%" alt="This is the ProfilePicture"></img> */}
+                            {/* <Button variant="primary">Upload Patient Data</Button> */}
+                            <div className={styles.dottedborder}>Dokument Hochladen</div>
+                        <input
+                        id="profilePictureUpload"
+                        name="profilePictureUpload"
+                        type="file"
+                        style={{display: "none"}}
+                        onChange={props.onChange}
+                        accept="image/*"
+                        />
+                    </label>
                     <Form>
                          <Form.Group controlId="formGridState">
                             <Form.Label style={{fontSize: "22px", fontWeight :"bold", marginTop: "7%", }}>Medizinische Fachrichtung:</Form.Label>
